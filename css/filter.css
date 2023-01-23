@@ -1,0 +1,61 @@
+#portfolio nav a {
+    display: inline-block;
+}
+
+#portfolio nav a:hover {
+    color: #A92BD8 !important;
+}
+
+.content-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content-container .css-filter--item {
+    width: 32.9%;
+    margin: 0 0.2% 1% 0.2%;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.content-container .css-filter--item img {
+    border-radius: 10px;
+}
+
+.css-filter--links a {
+    color: #ffffff !important;
+    margin-right: 35px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.css-filter--target:not(:target) ~ .css-filter--item {
+    display: block;
+}
+
+.css-filter--target:target ~ .css-filter--item {
+    display: none;
+}
+
+[id="tag:filter1"]:target ~ [data-tag~=filter1] {
+    display: block;
+}
+
+[id="tag:filter2"]:target ~ [data-tag~=filter2] {
+    display: block;
+}
+
+[id="tag:filter3"]:target ~ [data-tag~=filter3] {
+    display: block;
+}
+
+@media only screen and (max-width: 992px) {
+    .content-container .css-filter--item {
+        width: 100%;
+        margin: 0 0 25px 0;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+}
