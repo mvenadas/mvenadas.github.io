@@ -428,6 +428,10 @@ li.nav-item {
         margin-right: unset !important;
         margin-left: 15px;
     }
+	
+    a.navbar-brand {
+	margin-left: 15px !important;
+    }
 
     nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         width: 100%;
