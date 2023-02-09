@@ -467,4 +467,16 @@ li.nav-item {
         right: unset;
     }
 
+    /* Office Policies */
+    #ct_r img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: unset;
+        padding-right: unset;
+        padding-bottom: unset;
+        margin-bottom: 25px;
+        border: solid 1px #242424
+    }
+
 }
