@@ -42,7 +42,7 @@ gsap.from("#about-me", {
     scrollTrigger: {
       trigger: "#about-me",
       start: "25px bottom",
-      markers: true
+      // markers: true
 
     },
     x: -1500,
@@ -54,7 +54,7 @@ gsap.from("#portfolio", {
   scrollTrigger: {
     trigger: "#portfolio",
     start: "25px bottom",
-    markers: true
+    // markers: true
   },
   x: 1500,
   ease: "power4.inOut",
@@ -65,7 +65,7 @@ gsap.from("#contact-me", {
   scrollTrigger: {
     trigger: "#contact-me",
     start: "25px bottom",
-    markers: true
+    // markers: true
   },
   x: -1500,
   ease: "power4.inOut",
@@ -85,14 +85,7 @@ ScrollTrigger.matchMedia({
         y: 80
     });
 
-
-
-
     }
-
-
-
-
 
     // "(min-width: 700px)": () => {
     //   gsap.to('h1', {color: 'green'});
