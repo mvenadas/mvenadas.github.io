@@ -1,0 +1,25 @@
+#about-me {
+    position: relative;
+    right: 0;
+}
+
+#portfolio {
+    position: relative;
+    left: 0;
+}
+
+#contact-me {
+    position: relative;
+    right: 0;
+}
+
+.bubbs {
+    opacity: 0.1;
+    bottom: 50px;
+    position: relative;
+}
+
+@media only screen and (max-width: 992px) {
+
+
+}
