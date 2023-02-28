@@ -3,7 +3,7 @@
 
 * , html {
     font-family: 'Lato', sans-serif !important;
-    font-weight: 300;
+    /* font-weight: 300; */
     outline: none;
     padding: 0;
     margin: 0;
@@ -318,6 +318,23 @@ li.nav-item {
     font-size: 1.5em;
     margin-bottom: 0.65em;
 }
+
+/* Reviews */
+.review {
+    width: 100%;
+    height: auto;
+    /* border: solid 1px #dedede; */
+    /* padding: 25px; */
+}
+
+.zocdoc img {
+    width: 100%;
+    max-width: 75px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 
 /* Footer */
 
