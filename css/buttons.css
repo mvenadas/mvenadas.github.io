@@ -1,18 +1,18 @@
 .am-button {
-    background-color: #A92BD8;
-    border: none;
-    color: white;
-    padding: 15px 45px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 100px;
+  background-color: #a92bd8;
+  border: none;
+  color: white;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 100px;
 }
 
 .am-button:hover {
-    background-color: #690d8a;
-    transition: 0.3s;
+  background-color: #690d8a;
+  transition: 0.3s;
 }
