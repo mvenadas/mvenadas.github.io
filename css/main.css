@@ -4,12 +4,19 @@
 html {
   font-family: "inter", sans-serif;
   font-weight: 300;
+  font-size: 62.5%;
   padding: 0;
   margin: 0;
   outline: none;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+a,
+span {
+  font-size: 1.6rem;
 }
 
 body {
