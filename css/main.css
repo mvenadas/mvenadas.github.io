@@ -4,7 +4,7 @@
 html {
   font-family: "inter", sans-serif;
   font-weight: 300;
-  font-size: 62.5%;
+  font-size: 12px;
   padding: 0;
   margin: 0;
   outline: none;
@@ -16,7 +16,7 @@ html {
 p,
 a,
 span {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 body {
@@ -93,6 +93,12 @@ a {
   bottom: -20px;
   opacity: 0.9;
   z-index: 9;
+}
+
+mark {
+  display: inline-block;
+  padding: 10px 25px !important;
+  background-color: aqua;
 }
 
 .name-box {
