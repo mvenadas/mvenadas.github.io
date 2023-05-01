@@ -102,6 +102,28 @@
           </ul>          
           <a href="https://newportbehavioral.com/" target="_blank">Visit Website</a> 
         </div> 
+        <div id="talContent">
+          <h3 class="block heavy-700 white-text pad-top-0 pad-bottom-5">The Album Leaf<span class="purple-text font-rem-3 heavy-700">.</span></h3>
+          <p class="block pad-bottom-5">The Album Leaf is an American solo musical project founded in San Diego, California in 1998 by Jimmy LaValle. He is known for his use of electronics, synthesizer and Rhodes piano. His performances often feature projected visual art.</p>          
+          <mark class="font-rem-1-2 heavy-700">Design & Development</mark>
+          <!-- <p class="block pad-top-15"></p> -->
+          <span class="block heavy-700 white-text pad-top-15 pad-bottom-10">Frontend Development</span>
+          <ul class="white-text pad-l-10">            
+            <li>Wordpress</li>
+            <li>Coding: HTML5, CSS3, Javascript, Elementor</li>            
+            <li>Git, GitHub</li>
+            <li>SEO optimization</li>
+            <li>Site optimization</li>
+          </ul>
+          <span class="block heavy-700 white-text pad-bottom-10">Design</span>
+          <ul class="white-text pad-l-10">
+            <li>UX/UI</li>  
+            <li>RWD</li>        
+            <li>Mockups, moodboards, wireframes, web layouts</li>
+            <li>Tools: Adobe Photoshop</li>
+          </ul>          
+          <a href="https://thealbumleaf.com/" target="_blank">Visit Website</a> 
+        </div>         
         </div>                    
       </div>
       <!-- Hero Section -->
@@ -289,14 +311,15 @@
                             <div class="css-filter--item" data-tag="filter1">                              
                                 <img id="pscoBtn" class="image-resizer" onclick="psco.pscoPanel()" src="img/psco-thumb.jpg" alt="Perfect Smile Company">                              
                             </div>                             
-                            <div class="css-filter--item" data-tag="filter1">
-                                
-                              <img id="agBtn" class="image-resizer" onclick="ag.agPanel()" src="img/ag-thumb.jpg" alt="Apakula Gaming">
-                                
+                            <div class="css-filter--item" data-tag="filter1">                                
+                              <img id="agBtn" class="image-resizer" onclick="ag.agPanel()" src="img/ag-thumb.jpg" alt="Apakula Gaming">                                
                             </div>
                             <div class="css-filter--item" data-tag="filter1">                              
                                <img id="ncbmBtn" class="image-resizer" onclick="ncbm.ncbmPanel()" src="img/ncbm-thumb.jpg" alt="NCBM">                              
                             </div>
+                            <div class="css-filter--item" data-tag="filter1">                              
+                              <img id="talBtn" class="image-resizer" onclick="tal.talPanel()" src="img/tal-thumb.jpg" alt="The Album Leaf">                              
+                           </div>                            
 
                             <script>
 
@@ -316,13 +339,14 @@
 
                                   document.getElementById('pscoBtn').style.pointerEvents = 'none';
                                   document.getElementById('agBtn').style.pointerEvents = 'none';
+                                  document.getElementById('talBtn').style.pointerEvents = 'none';
                               }
 
                               const psco = {                                
                                 pscoPanel: function () {
                                   document.getElementById('content').style.display = 'block';
                                   document.getElementById('pscoContent').style.display = 'block';          
-                                  gsapAni();                
+                                  gsapAni();                                                
                                 },
                               }
 
@@ -338,6 +362,15 @@
                                 ncbmPanel: function () {
                                   document.getElementById('content').style.display = 'block';
                                   document.getElementById('ncbmContent').style.display = 'block';
+                                  document.getElementById('talContent').style.display = 'none';
+                                  gsapAni();
+                                },
+                              }
+
+                              const tal = {                                
+                                talPanel: function () {
+                                  document.getElementById('content').style.display = 'block';
+                                  document.getElementById('talContent').style.display = 'block';
                                   gsapAni();
                                 },
                               }
