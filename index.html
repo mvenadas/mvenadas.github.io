@@ -128,9 +128,10 @@
           <h3 class="block heavy-700 white-text pad-top-0 pad-bottom-5">TH Genesis<span class="purple-text font-rem-3 heavy-700">.</span></h3>
           <p class="block pad-bottom-5">As the Front End Developer for TH Genesis I was responsible for coding pixel perfect websites, maintenance, fixing bugs, and regualr updates to the following brands:</p>          
           <ul class="no-bullets pad-l-0 pad-bottom-15">
-            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.crinaturals.com" target="_blank"><img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"> CRI Naturals</a> - Wordpress</li>
-            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.shopperadvocate.com" target="_blank"><img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"> Shopper Advocate</a> - Wordpress</li>
-            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.asox9.com" target="_blank"><img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"> ASOX9</a> - HTML/Bootstrap</li>
+            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.thgenesis.com" target="_blank">TH Genesis</a> - Wordpress <img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"></li>
+            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.crinaturals.com" target="_blank">CRI Naturals</a> - Wordpress <img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"></li>
+            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.shopperadvocate.com" target="_blank">Shopper Advocate</a> - Wordpress <img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"></li>
+            <li class="white-text pad-top-10 pad-bottom-10"><a href="https://www.asox9.com" target="_blank">ASOX9</a> - HTML/Bootstrap <img class="image-resizer max-w-15 pos-up-3" src="img/launch.svg" alt="Go To Website"></li>
           </ul>
           <mark class="font-rem-1-2 heavy-700">Design & Development</mark>
           <!-- <p class="block pad-top-15"></p> -->
@@ -348,79 +349,7 @@
                            </div>
                            <div class="css-filter--item" data-tag="filter1">                              
                             <img id="thgBtn" class="image-resizer" onclick="thg.thgPanel()" src="img/thg-thumb.jpg" alt="TH Genesis">                              
-                         </div>                                                       
-
-                            <script>
-
-                              // GSAP Panel Animation
-                              function gsapAni() {
-                                gsap.from("#content", {
-                                  x: 500,
-                                  duration: 0.5,
-                                  ease: "power3.out",
-                                  });
-
-                                  gsap.from(".closeBtn img", {
-                                  delay: 1,
-                                  y: -100,
-                                  ease: "power3.out",
-                                  });
-
-                                  document.getElementById('pscoBtn').style.pointerEvents = 'none';
-                                  document.getElementById('agBtn').style.pointerEvents = 'none';
-                                  document.getElementById('talBtn').style.pointerEvents = 'none';
-                              }
-
-                              const psco = {                                
-                                pscoPanel: function () {
-                                  document.getElementById('content').style.display = 'block';
-                                  document.getElementById('pscoContent').style.display = 'block';
-                                  document.getElementById('talContent').style.display = 'none';       
-                                  document.getElementById('thgContent').style.display = 'none';       
-                                  gsapAni();                                                
-                                },
-                              }
-
-                              const ag = {                                
-                                agPanel: function () {
-                                  document.getElementById('content').style.display = 'block';
-                                  document.getElementById('agContent').style.display = 'block';
-                                  document.getElementById('talContent').style.display = 'none';
-                                  document.getElementById('thgContent').style.display = 'none';
-                                  gsapAni();
-                                },
-                              }
-
-                              const ncbm = {                                
-                                ncbmPanel: function () {
-                                  document.getElementById('content').style.display = 'block';
-                                  document.getElementById('ncbmContent').style.display = 'block';
-                                  document.getElementById('talContent').style.display = 'none';
-                                  document.getElementById('thgContent').style.display = 'none';
-                                  gsapAni();
-                                },
-                              }
-
-                              const tal = {                                
-                                talPanel: function () {
-                                  document.getElementById('content').style.display = 'block';
-                                  document.getElementById('talContent').style.display = 'block';
-                                  document.getElementById('thgContent').style.display = 'none';
-                                  gsapAni();
-                                },
-                              }
-
-                              const thg = {                                
-                                thgPanel: function () {
-                                  document.getElementById('content').style.display = 'block';
-                                  document.getElementById('thgContent').style.display = 'block';
-                                  document.getElementById('talContent').style.display = 'none';
-                                  gsapAni();
-                                },
-                              }
-
-                            </script>
-                           
+                         </div>                                                                                  
                             <!-- <div class="css-filter--item" data-tag="filter2">
 
                             </div>
@@ -476,6 +405,7 @@
     <!-- GSAP 3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/showcase.js"></script>
     <script src="js/animate.js"></script>       
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
