@@ -16,6 +16,7 @@ function gsapAni() {
   document.getElementById("agBtn").style.pointerEvents = "none";
   document.getElementById("talBtn").style.pointerEvents = "none";
   document.getElementById("thgBtn").style.pointerEvents = "none";
+  document.getElementById("yanaBtn").style.pointerEvents = "none";
 }
 
 function showContent() {
@@ -30,12 +31,17 @@ function hideThg() {
   document.getElementById("thgContent").style.display = "none";
 }
 
+function hideYana() {
+  document.getElementById("yanaContent").style.display = "none";
+}
+
 const psco = {
   pscoPanel: function () {
     showContent();
     document.getElementById("pscoContent").style.display = "block";
     hideTal();
     hideThg();
+    hideYana();
     gsapAni();
   },
 };
@@ -46,6 +52,7 @@ const ag = {
     document.getElementById("agContent").style.display = "block";
     hideTal();
     hideThg();
+    hideYana();
     gsapAni();
   },
 };
@@ -56,6 +63,7 @@ const ncbm = {
     document.getElementById("ncbmContent").style.display = "block";
     hideTal();
     hideThg();
+    hideYana();
     gsapAni();
   },
 };
@@ -65,6 +73,7 @@ const tal = {
     showContent();
     document.getElementById("talContent").style.display = "block";
     hideThg();
+    hideYana();
     gsapAni();
   },
 };
@@ -73,6 +82,17 @@ const thg = {
   thgPanel: function () {
     showContent();
     document.getElementById("thgContent").style.display = "block";
+    hideTal();
+    hideYana();
+    gsapAni();
+  },
+};
+
+const yana = {
+  yanaPanel: function () {
+    showContent();
+    document.getElementById("yanaContent").style.display = "block";
+    hideThg();
     hideTal();
     gsapAni();
   },
