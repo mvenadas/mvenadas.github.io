@@ -66,13 +66,9 @@ a {
 .hero {
   width: 100%;
   height: 550px;
-  max-width: 1200px;
+  max-width: 980px;
   position: relative;
-  /* background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    background-image: url(../img/mv-hero.png);     */
+  margin: 0 auto;
 }
 
 .hero .mv img {
