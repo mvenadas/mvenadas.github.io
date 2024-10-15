@@ -295,7 +295,7 @@ hr {
   .portfolio-container {
     padding: 25px 0;
     width: 90%;
-    margin: 0 auto
+    margin: 25px auto 0 auto;
   }
 
   .portfolio-container h2 {
