@@ -258,10 +258,22 @@ hr {
     margin: 25px auto
   }
 
+  .key-skills-container h2 {
+    padding: 25px;
+  }  
+
+  .key-skills-flex {
+    padding: 0 25px;
+  }  
+
   .about-container {
     padding: 25px 0;
     width: 90%;
     margin: 0 auto
+  }
+
+  .about-container h2 {
+    padding: 0 25px 0 25px;
   }
 
   .about-flex {
@@ -274,6 +286,10 @@ hr {
     width: 90%;
     margin: 0 auto
   }
+
+  .portfolio-container h2 {
+    padding: 0 25px 25px 25px;
+  }  
 
   .content-container {
     padding: 0 25px;
