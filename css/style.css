@@ -255,22 +255,27 @@ hr {
   .key-skills-container {
     padding: 0;
     width: 90%;
-    margin: 0 auto
+    margin: 25px auto
   }
 
   .about-container {
-    padding: 0;
+    padding: 25px 0;
     width: 90%;
     margin: 0 auto
   }
 
   .about-flex {
     display: block;
+    padding: 0 25px;
   }
 
   .portfolio-container {
-    padding: 0;
+    padding: 25px 0;
     width: 90%;
     margin: 0 auto
+  }
+
+  .content-container {
+    padding: 0 25px;
   }
 }
