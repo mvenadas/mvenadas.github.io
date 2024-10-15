@@ -245,11 +245,18 @@ hr {
   }
 
   .hero-info {
-    padding: 15px 25px 0 25px;
+    padding: 0 25px 0 25px;
   }
 
+  .hero-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 35px;
+    padding: 5%;
+  } 
+
   .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .key-skills-container {
@@ -280,6 +287,10 @@ hr {
     display: block;
     padding: 0 25px;
   }
+
+  .profile-pic img {
+    max-width: 150px;
+  }  
 
   .portfolio-container {
     padding: 25px 0;
