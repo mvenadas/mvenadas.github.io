@@ -273,6 +273,10 @@ hr {
     padding: 0 25px;
   }  
 
+  .key-skills-flex span {
+    font-size: 11px;
+  }  
+
   .about-container {
     padding: 25px 0;
     width: 90%;
@@ -304,5 +308,9 @@ hr {
 
   .content-container {
     padding: 0 25px;
+  }
+
+  .hero-content hr {
+    margin: 15px 0 0 0;
   }
 }
