@@ -19,7 +19,7 @@ mark {
 
 #content {
   width: 50%;
-  height: calc(100vh - 5em); /* Adjust height to account for padding */
+  height: calc(100vh - 0em); /* Adjust height to account for padding */
   background-color: #171717;
   padding: 2.5em 5em; /* Adjust padding as needed */
   box-sizing: border-box;
