@@ -59,6 +59,10 @@ mark {
   z-index: 1000000; /* Ensure it’s on top */
 }
 
+#fiveheContent {
+  display: none;
+}
+
 #pscoContent {
   display: none;
 }

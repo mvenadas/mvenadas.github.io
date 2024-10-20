@@ -12,11 +12,21 @@ function gsapAni() {
     ease: "power3.out",
   });
 
+  document.getElementById("fiveheBtn").style.pointerEvents = "none";
   document.getElementById("pscoBtn").style.pointerEvents = "none";
   document.getElementById("agBtn").style.pointerEvents = "none";
   document.getElementById("talBtn").style.pointerEvents = "none";
   document.getElementById("thgBtn").style.pointerEvents = "none";
   document.getElementById("yanaBtn").style.pointerEvents = "none";
+}
+
+function hideAllPanels() {
+  document.getElementById("fiveheContent").style.display = "none";
+  document.getElementById("pscoContent").style.display = "none";
+  document.getElementById("agContent").style.display = "none";
+  document.getElementById("ncbmContent").style.display = "none";
+  document.getElementById("yanaContent").style.display = "none";  // Hide yana content
+  document.getElementById("talContent").style.display = "none";
 }
 
 function showContent() {
@@ -35,8 +45,25 @@ function hideYana() {
   document.getElementById("yanaContent").style.display = "none";
 }
 
+const fivehe = {
+  fivehePanel: function () {
+    hideAllPanels();  // Hide all panels first
+    showContent();
+    document.getElementById("fiveheContent").style.display = "block";
+    hideTal();
+    hideThg();
+    hideYana();  // Ensure this hides the yanaContent
+    hidePsco();
+    hideAg();
+    hideNcbm();
+    gsapAni();
+  },
+};
+
+
 const psco = {
   pscoPanel: function () {
+    hideAllPanels();  // Hide all panels first
     showContent();
     document.getElementById("pscoContent").style.display = "block";
     hideTal();
@@ -48,6 +75,7 @@ const psco = {
 
 const ag = {
   agPanel: function () {
+    hideAllPanels();  // Hide all panels first
     showContent();
     document.getElementById("agContent").style.display = "block";
     hideTal();
@@ -59,6 +87,7 @@ const ag = {
 
 const ncbm = {
   ncbmPanel: function () {
+    hideAllPanels();  // Hide all panels first
     showContent();
     document.getElementById("ncbmContent").style.display = "block";
     hideTal();
@@ -70,6 +99,7 @@ const ncbm = {
 
 const tal = {
   talPanel: function () {
+    hideAllPanels();  // Hide all panels first
     showContent();
     document.getElementById("talContent").style.display = "block";
     hideThg();
@@ -80,6 +110,7 @@ const tal = {
 
 const thg = {
   thgPanel: function () {
+    hideAllPanels();  // Hide all panels first
     showContent();
     document.getElementById("thgContent").style.display = "block";
     hideTal();
@@ -90,6 +121,7 @@ const thg = {
 
 const yana = {
   yanaPanel: function () {
+    hideAllPanels();  // Hide all panels first
     showContent();
     document.getElementById("yanaContent").style.display = "block";
     hideThg();
@@ -97,3 +129,8 @@ const yana = {
     gsapAni();
   },
 };
+
+$(".closeBtn").on("click", function () {
+  hideAllPanels();
+  document.getElementById("content").style.display = "none";
+});
