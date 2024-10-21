@@ -17,7 +17,7 @@ mark {
   margin: 25px 0 0 0;
 }
 
-#content {
+#content { 
   width: 50%;
   height: calc(100vh - 0em); /* Adjust height to account for padding */
   background-color: #171717;
