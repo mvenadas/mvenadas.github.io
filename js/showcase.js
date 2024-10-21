@@ -25,6 +25,7 @@ function hideAllPanels() {
   document.getElementById("agContent").style.display = "none";
   document.getElementById("ncbmContent").style.display = "none";
   document.getElementById("talContent").style.display = "none";
+  document.getElementById("squatzContent").style.display = "none";
 }
 
 function showContent() {
