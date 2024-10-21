@@ -26,7 +26,9 @@ function hideAllPanels() {
   document.getElementById("ncbmContent").style.display = "none";
   document.getElementById("talContent").style.display = "none";
   document.getElementById("squatzContent").style.display = "none";
+  document.getElementById("jaanContent").style.display = "none";
 }
+
 
 function showContent() {
   document.getElementById("content").style.display = "block";
@@ -50,6 +52,15 @@ const fivehe = {
     hidePsco();
     hideAg();
     hideNcbm();
+    gsapAni();
+  },
+};
+
+const jaan = {
+  jaanPanel: function () {
+    hideAllPanels();  // Hide all panels first
+    showContent();
+    document.getElementById("jaanContent").style.display = "block";
     gsapAni();
   },
 };
