@@ -236,11 +236,15 @@ hr {
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 25px 0;
+    padding: 25px 0 35px 0;
 }
 
 .footer span {
     font-size: 11px;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
