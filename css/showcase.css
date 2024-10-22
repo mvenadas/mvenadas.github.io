@@ -84,8 +84,8 @@ mark {
 @media only screen and (max-width: 992px) {
   #content {
     width: 90%;
-    height: calc(100vh - 5em); /* Adjust for mobile screens */
-    background-color: #232323;
+    height: calc(100vh - 0em); /* Adjust for mobile screens */
+    background-color: #2e2e2e;
     padding: 2.5em 2.5em;
     box-sizing: border-box;
     overflow-y: auto;

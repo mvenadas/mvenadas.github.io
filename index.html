@@ -171,7 +171,15 @@
               </div>   
               <div class="css-filter--item" data-tag="filter1">                              
                 <img id="jaanBtn" class="image-resizer" onclick="jaan.jaanPanel()" src="img/jaan-thumb.jpg" alt="Jaan Labs">                              
-              </div>               
+              </div>      
+              <div class="css-filter--item" data-tag="filter1">                              
+                <img id="focusBtn" class="image-resizer" src="img/focus-thumb.jpg" alt="Focus">                
+              </div>                        
+              <script>
+                document.getElementById("focusBtn").addEventListener("click", function() {
+                  focus.focusPanel();
+                });
+              </script>
               <div class="css-filter--item" data-tag="filter1">                              
                 <img id="squatzBtn" class="image-resizer" onclick="squatz.squatzPanel()" src="img/squatz-thumb.jpg" alt="Squatz">                              
               </div>                         
@@ -232,7 +240,21 @@
             <li>Mockups, web layouts, image compositions, icons, infographics</li>
           </ul>           
           <a href="https://jaanlabs.com" target="_blank">Visit Website</a>
-        </div>        
+        </div>     
+        <div id="focusContent">
+          <h3>Focus</h3>
+          <p>As a fresh player in the energy shot market, Focus is committed to delivering top-quality products that give you a competitive edge.</p>
+          <mark>Development</mark>
+          <p>As the Lead Shopify Developer for Focus, I was responsible for the complete Shopify integration, handling all custom coding and development. I implemented user-friendly interfaces, ensuring seamless functionality while creating a tailored shopping experience that perfectly aligned with the brand's vision and goals.</p>
+          <span>Shopify Development</span>
+          <ul>
+            <li>Shopify Plus Integration</li>
+            <li>Modern Web Technologies</li>
+            <li>Coding: HTML5, CSS3, JavaScript, Custom Liquid Programming & Schemas</li>          
+            <li>SEO Optimization</li>
+          </ul>
+          <a href="https://focusshots.com" target="_blank">Visit Website</a>
+        </div>            
         <div id="squatzContent">
           <h3>Squatz</h3>
           <p>Squatz is a cutting-edge fitness platform that connects trainers and clients for personalized workout sessions.</p>

@@ -27,8 +27,8 @@ function hideAllPanels() {
   document.getElementById("talContent").style.display = "none";
   document.getElementById("squatzContent").style.display = "none";
   document.getElementById("jaanContent").style.display = "none";
+  document.getElementById("focusContent").style.display = "none"; // Ensure this is correct
 }
-
 
 function showContent() {
   document.getElementById("content").style.display = "block";
@@ -62,6 +62,16 @@ const jaan = {
     showContent();
     document.getElementById("jaanContent").style.display = "block";
     gsapAni();
+  },
+};
+
+const focus = {
+  focusPanel: function () {
+    hideAllPanels();  // Hide all panels first
+    showContent();
+    document.getElementById("focusContent").style.display = "block"; // Ensure this matches the actual ID
+    console.log("Focus panel is being triggered"); // For debugging
+    gsapAni();  // Run GSAP animation
   },
 };
 
