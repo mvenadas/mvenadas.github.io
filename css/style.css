@@ -320,4 +320,8 @@ hr {
   .hero-content hr {
     margin: 15px 0 0 0;
   }
+
+  .myemail {
+    display: block;
+  }
 }
