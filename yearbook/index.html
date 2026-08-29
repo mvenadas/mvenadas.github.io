@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0a09">
+  <meta name="description" content="The complete interactive 2002 Benjamin Franklin High School yearbook.">
+  <meta property="og:title" content="Making an Impression · Franklin High School 2002">
+  <meta property="og:description" content="The complete interactive digital yearbook.">
+  <meta property="og:image" content="og.png">
+  <title>Making an Impression · Franklin High School 2002</title>
+  <link rel="preload" as="image" href="pages/yearbook-001.jpg">
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body>
+  <main class="yearbook-shell">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">BENJAMIN FRANKLIN HIGH SCHOOL · LOS ANGELES</p>
+        <h1>Making an Impression</h1>
+        <p class="subtitle">Class of 2002 · Complete digital yearbook</p>
+      </div>
+      <div class="header-mark" aria-hidden="true"><span>FHS</span><b>02</b></div>
+    </header>
+    <section class="reader" id="reader" aria-label="Interactive yearbook">
+      <button class="nav previous" id="previous" aria-label="Previous spread">‹</button>
+      <div class="book-wrap is-closed" id="bookWrap"><div class="book-shadow"></div><div class="book" id="book" aria-live="polite"></div></div>
+      <button class="nav next" id="next" aria-label="Next spread">›</button>
+    </section>
+    <section class="controls" aria-label="Reader controls">
+      <div class="tool-group"><button id="zoom" aria-pressed="false">Zoom</button><button id="fullscreen">Fullscreen</button></div>
+      <p><span id="spreadLabel">SPREAD 1</span><i></i><b id="pageLabel">1 OF 214</b></p>
+      <span class="hint">Drag, swipe, or use arrow keys</span>
+    </section>
+    <nav class="filmstrip" id="filmstrip" aria-label="Page thumbnails"></nav>
+    <footer><span>FRANKLIN HIGH SCHOOL</span><span>MAKING AN IMPRESSION · 2002</span></footer>
+  </main>
+  <script src="app.js?v=6"></script>
+</body>
+</html>
